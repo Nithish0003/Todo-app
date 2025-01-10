@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-header">
+        <h1>Todo List</h1>
+        <img src="images/note.png" alt="note" />
+      </div>
+      <div class="todo-body">
+        <input
+          type="text"
+          id="todoText"
+          class="todo-input"
+          placeholder="Add Your task"
+        />
+        <img
+          src="images/plus.png"
+          alt="+"
+          id="AddUpdateClick"
+          onclick="CreateToDoData()"
+        />
+      </div>
+      <h5 id="AlertMessage"></h5>
+      <ul id="list-items" class="list-items"></ul>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
